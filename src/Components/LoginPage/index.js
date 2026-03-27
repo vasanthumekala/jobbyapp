@@ -90,6 +90,10 @@ class LoginPage extends Component {
         <p className="dev-text">
           Developed by @<span className="my-name"> Vasanthu</span>
         </p>
+        <p className="dev-text">
+          Note:Login with{' '}
+          <span className="note-text">name: rahul,password: rahul@2021</span>
+        </p>
       </div>
     )
   }

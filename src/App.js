@@ -9,16 +9,16 @@ import './App.css'
 
 const App = () => (
   <Switch>
-    <Route exact path='/login' component={LoginPage} />
-    <ProtectedAuthentication exact path='/' component={HomePage} />
-    <ProtectedAuthentication exact path='/jobs' component={JobsPage} />
+    <Route exact path="/login" component={LoginPage} />
+    <ProtectedAuthentication exact path="/" component={HomePage} />
+    <ProtectedAuthentication exact path="/jobs" component={JobsPage} />
     <ProtectedAuthentication
       exact
-      path='/jobs/:id'
+      path="/jobs/:id"
       component={JobFullDetails}
     />
-    <Route exact path='/not-found' component={NotFound} />
-    <Redirect to='/not-found' />
+    <Route exact path="/not-found" component={NotFound} />
+    <Redirect to="/not-found" />
   </Switch>
 )
 
